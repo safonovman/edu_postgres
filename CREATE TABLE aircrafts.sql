@@ -22,3 +22,8 @@ INSERT INTO aircrafts1 ( aircraft_code, model, range )
                 ( '319', 'Airbus A319-100', 6700 ),
                 ( 'CN1', 'Cessna 208 Caravan', 1200 ),
                 ( 'CN2', 'Bombardier CRJ-200', 2700 );
+
+---- Упорядочим строки по значению атрибута model
+SELECT model, aircraft_code, range
+    FROM aircrafts1
+    ORDER BY model;
