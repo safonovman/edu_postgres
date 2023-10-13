@@ -27,3 +27,24 @@ INSERT INTO aircrafts1 ( aircraft_code, model, range )
 SELECT model, aircraft_code, range
     FROM aircrafts1
     ORDER BY model;
+
+---- Выборка моделей самолетов у которых максимальная дальность от 4 до 6 тыс.км
+SELECT model, aircraft_code, range
+    FROM aircrafts1
+    WHERE range >= 4000 AND range <= 6000;
+
+
+----Обновим таблицу с помощью команды UPDATE
+UPDATE aircrafts1 SET range = 3500
+    WHERE aircraft_code = 'SU9';
+
+---Проверим что получилось
+SELECT * 
+FROM aircrafts1 
+WHERE aircraft_code = 'SU9';
+
+---Удалим строку таблицы aircrafts1
+DELETE FROM aircrafts1 WHERE aircraft_code = 'CN1';
+
+--- Удалим информацию о самолетах с дальностью полета более 10000 км а также с дальностью полета менее 3000 км.
+DELETE from aircrafts1 WHERE range > 10000 OR range < 3000;
