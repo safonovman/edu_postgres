@@ -48,3 +48,6 @@ DELETE FROM aircrafts1 WHERE aircraft_code = 'CN1';
 
 --- Удалим информацию о самолетах с дальностью полета более 10000 км а также с дальностью полета менее 3000 км.
 DELETE from aircrafts1 WHERE range > 10000 OR range < 3000;
+
+---Команда для удаления всех строк в таблице 
+DELETE FROM aircrafts1;
