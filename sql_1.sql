@@ -113,3 +113,6 @@ INSERT INTO DATABASES VALUES (FALSE, 'MS SQL Server' );
 --- Теперь обратимся к ней с запросом Select *
 select * from databases;
 
+
+
+https://youtu.be/hevWgm6KTLM
