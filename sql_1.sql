@@ -115,4 +115,3 @@ select * from databases;
 
 
 
-https://youtu.be/hevWgm6KTLM
