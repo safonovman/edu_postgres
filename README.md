@@ -6,6 +6,6 @@
 
 
 ## psql команды
-<video src="/Users/safonov/Documents/edu_postgres/media/1.mp4" controls Title="Title">
+<video src="media/1.mp4" controls Title="Title">
 
 ISSafonov
