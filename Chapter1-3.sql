@@ -83,12 +83,12 @@ INSERT INTO seats1 VALUES
 SELECT aircraft_code, count ( * ) FROM seats
     GROUP BY aircraft_code
     ORDER BY count;    
-
+----------
 SELECT aircraft_code, fare_conditions, count( * ) 
-GROUP BY aircraft_code, fare_conditions
 FROM seats
+GROUP BY aircraft_code, fare_conditions
 ORDER BY aircraft_code, fare_conditions;
-
+------
 INSERT INTO aircrafts
     VALUES ( 'SU9', 'Sukhoi SuperJet-100', 3000 );
 
